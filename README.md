@@ -1,0 +1,2 @@
+# dingtalkrus
+dingtalk logrus hook
