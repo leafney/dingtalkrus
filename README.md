@@ -65,3 +65,8 @@ SendLinkMsg
 | text | String 是 | 消息内容。如果太长只会部分展示 |
 | messageUrl | String | 是 | 点击消息跳转的URL |
 | picUrl | String | 否 | 图片URL |
+
+### Reference
+
+* [dingrus](https://github.com/dandans-dan/dingrus)
+* [slackrus](https://github.com/johntdyer/slackrus)
