@@ -101,7 +101,6 @@ func (dh *DingTalkHook) Fire(entry *logrus.Entry) error {
 	return nil
 }
 
-
 func SendTextMsg(content string, atMobiles []string, isAtAll bool) logrus.Fields  {
 	return map[string]interface{}{
 		"msgtype":"text",
@@ -129,7 +128,6 @@ func SendMarkdownMsg(title string, text string, atMobiles []string, isAtAll bool
 	}
 }
 
-//
 func SendLinkMsg(title string, text string, messageUrl string, picUrl string) logrus.Fields {
 	return map[string]interface{}{
 		"msgtype": "link",
