@@ -59,6 +59,13 @@ func (dh *DingTalkHook) Fire(entry *logrus.Entry) error {
 	if err != nil {
 		return errors.New("Marshal Fields to JSON error: " + err.Error())
 	}
+
+	// Filter message type
+	isMatch:= dingTalkMsgFilter(b)
+	if !isMatch{
+		return nil
+	}
+
 	body := ioutil.NopCloser(bytes.NewBuffer(b))
 
 	value:=url.Values{}
