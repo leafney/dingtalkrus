@@ -8,6 +8,7 @@ var AllLevels=[]logrus.Level{
 	logrus.ErrorLevel,
 	logrus.FatalLevel,
 	logrus.PanicLevel,
+	logrus.DebugLevel,
 }
 
 // Returns every logging level above and including the given parameter.
